@@ -8,5 +8,11 @@ class CashRegister
     @discount = discount
   end 
 
+  def add_item(title, price, quantity = 0)
+    @total = price + @total 
+    @quantity = quantity
+  end 
+  
+  
 end 
 
